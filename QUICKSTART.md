@@ -150,20 +150,6 @@ Each finding includes:
 - Tactic (Execution, Persistence, etc.)
 - Description of the technique
 
-## Testing the Tool
-
-Generate test data to validate functionality:
-```bash
-python utils/test_data_generator.py
-
-# This creates test_data/ directory with sample artifacts
-
-# Test the tool
-python cat.py \
-    --windows-artifacts ./test_data/windows \
-    --linux-artifacts ./test_data/linux
-```
-
 ## Troubleshooting
 
 ### "No findings detected"
