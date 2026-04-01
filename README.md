@@ -55,8 +55,8 @@ See [COLLECTION_GUIDE.md](COLLECTION_GUIDE.md) for detailed collection documenta
 ### Setup
 ```bash
 # Clone or download the tool
-git clone https://github.com/Moe-93/Automation-Compromise-assessment-Tool.git
-cd Compromise-assessment-Tool
+git clone https://github.com/Moe-93/Auto-Compromise-assessment-Tool.git
+cd Auto-Compromise-assessment-Tool
 
 # Install dependencies (if any)
 pip install -r requirements.txt
