@@ -14,7 +14,6 @@
 
 ### Usage Examples
 - **[EXAMPLES.py](EXAMPLES.py)** - 20 detailed usage scenarios
-- **[demo.py](demo.py)** - Interactive demonstration script
 
 ### Technical Documentation
 - **[IMPLEMENTATION_SUMMARY.md](IMPLEMENTATION_SUMMARY.md)** - Architecture overview
