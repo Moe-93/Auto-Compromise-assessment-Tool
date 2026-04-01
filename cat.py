@@ -353,9 +353,10 @@ def print_banner():
     banner = """
     ╔══════════════════════════════════════════════════════════════════╗
     ║                                                                  ║
-    ║           COMPROMISE ASSESSMENT TOOL (CAT) v2.0                 ║
+    ║           COMPROMISE ASSESSMENT TOOL (CAT) v2.0                  ║
     ║                                                                  ║
-    ║     Collect, Parse & Analyze with MITRE ATT&CK Mapping          ║
+    ║     Collect, Parse & Analyze with MITRE ATT&CK Mapping           ║
+    ║                 Create By Mohamed Jawarneh                       ║
     ║                                                                  ║
     ╚══════════════════════════════════════════════════════════════════╝
     """
