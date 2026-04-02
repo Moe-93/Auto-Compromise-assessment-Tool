@@ -155,7 +155,7 @@ class ArtifactCollector:
                 "type": "directory"
             },
             "NamedPipesAudit": {
-                "command": "powershell Get-ChildItem \\\.\pipe\",
+                "command": r"powershell Get-ChildItem \\.\pipe\\",
                 "dest": "NamedPipes\pipes.txt",
                 "type": "command"
             },
