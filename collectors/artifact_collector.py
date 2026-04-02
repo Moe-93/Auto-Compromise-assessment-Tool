@@ -189,7 +189,7 @@ class ArtifactCollector:
             },
             "CertUtilCache": {
                 "command": "certutil -urlcache *",
-                "dest": "CertUtil\urlcache.txt",
+                "dest": r"CertUtil\urlcache.txt",
                 "type": "command"
             },
             "OSInfo": {
