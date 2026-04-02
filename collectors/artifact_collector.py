@@ -1,3 +1,4 @@
+
 """
 Artifact Collector Module
 Collects forensic artifacts from Windows and Linux systems
@@ -165,7 +166,7 @@ class ArtifactCollector:
             },
             "GPOScriptsAudit": {
                 "paths": [
-                    r"C:\Windows\System32\GroupPolicy\Machine\Scripts",
+                    r"C:\Windows\System32\GroupPolicy\\Machine\Scripts",
                     r"C:\Windows\System32\GroupPolicy\User\Scripts"
                 ],
                 "dest": "GPOScripts",
@@ -177,39 +178,39 @@ class ArtifactCollector:
                 "type": "command"
             },
             "CCMRUA": {
-                "path": r"C:\Windows\CCM\Logs",
+                "path": r"C:\Windows\\CCM\Logs",
                 "dest": "CCMRUA",
                 "type": "directory"
             },
             "DefenderWELS": {
-                "path": r"C:\Windows\System32\winevt\Logs\Microsoft-Windows-Windows Defender%4Operational.evtx",
+                "path": r"C:\Windows\System32\winevt\Logs\\Microsoft-Windows-Windows Defender%4Operational.evtx",
                 "dest": "EventLogs\Defender_Operational.evtx",
                 "type": "file"
             },
             "CertUtilCache": {
                 "command": "certutil -urlcache *",
-                "dest": r"CertUtil\urlcache.txt",
+                "dest": "CertUtil\\urlcache.txt",
                 "type": "command"
             },
             "OSInfo": {
                 "command": "systeminfo",
-                "dest": "OSInfo\systeminfo.txt",
+                "dest": "OSInfo\\systeminfo.txt",
                 "type": "command"
             },
             "MFT": {
                 "command": "fsutil fsinfo ntfsinfo C:",
-                "dest": r"MFT\tfsinfo.txt",
+                "dest": "MFT\ntfsinfo.txt",
                 "type": "command"
             },
             "USBSTOR": {
-                "registry_path": r"HKLM\SYSTEM\CurrentControlSet\Enum\USBSTOR",
-                "dest": r"USBSTOR\usb_registry.txt",
+                "registry_path": r"HKLM\SYSTEM\\CurrentControlSet\Enum\USBSTOR",
+                "dest": "USBSTOR\\usb_registry.txt",
                 "type": "registry"
             },
             "BrowsingHistory": {
                 "paths": [
-                    os.path.expandvars(r"%LOCALAPPDATA%\Microsoft\Windows\History"),
-                    os.path.expandvars(r"%LOCALAPPDATA%\Google\Chrome\User Data\Default\History"),
+                    os.path.expandvars(r"%LOCALAPPDATA%\\Microsoft\Windows\History"),
+                    os.path.expandvars(r"%LOCALAPPDATA%\Google\\Chrome\User Data\Default\History"),
                     os.path.expandvars(r"%APPDATA%\Mozilla\Firefox\Profiles")
                 ],
                 "dest": "BrowserHistory",
@@ -640,7 +641,4 @@ def main():
 
 
 if __name__ == "__main__":
-    sys.exit(main())" where shall i add this "try:
-    # collection code
-except PermissionError:
-    logger.error("File locked, skipping...")
+    sys.exit(main())
