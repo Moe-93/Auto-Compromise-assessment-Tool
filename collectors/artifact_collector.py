@@ -174,7 +174,7 @@ class ArtifactCollector:
             },
             "WindowsFirewall": {
                 "command": "netsh advfirewall show allprofiles",
-                "dest": "Firewall\firewall_config.txt",
+                "dest": "Firewall\\firewall_config.txt",
                 "type": "command"
             },
             "CCMRUA": {
